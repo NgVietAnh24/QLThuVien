@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|top"
+        android:gravity="center"
+        android:text="Nhập sách"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvMaHD"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Mã hóa đơn:"
+            android:textSize="19sp" />
+
+        <EditText
+            android:id="@+id/edtMaHD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập mã hóa đơn" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvMaSach"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Mã sách:"
+            android:textSize="19sp" />
+
+        <EditText
+            android:id="@+id/edtMaSach"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập mã sách" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvTenSach"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Tên sách:"
+            android:textSize="19sp" />
+
+        <EditText
+            android:id="@+id/edtTenSach"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập tên sách" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvDanhMuc"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Danh mục:"
+            android:textSize="19sp" />
+
+        <EditText
+            android:id="@+id/edtDanhMuc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập danh mục" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvSoTrang"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Số trang:"
+            android:textSize="19sp" />
+
+        <EditText
+            android:id="@+id/edtSoTrang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập số trang" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvGia"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Giá sách:"
+            android:textSize="19sp" />
+
+        <EditText
+            android:id="@+id/edtGia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập giá sách" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvTacGIa"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Tác giả:"
+            android:textSize="19sp" />
+
+        <EditText
+            android:id="@+id/edtTacGia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập tác giả" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvTenNXB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tên NXB:"
+            android:textSize="19sp" />
+
+        <Spinner
+            android:id="@+id/spTenNXB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp">
+
+        <TextView
+            android:id="@+id/tvLanguage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ngôn ngữ:"
+            android:textSize="19sp" />
+
+        <Spinner
+            android:id="@+id/spLanguage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvNV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nhân viên:"
+            android:textSize="19sp" />
+
+        <Spinner
+            android:id="@+id/spNV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvSL"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Số lượng:"
+            android:textSize="19sp" />
+
+        <EditText
+            android:id="@+id/edtSL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập số lượng" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvNXB"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Năm XB:"
+            android:textSize="19sp" />
+
+        <EditText
+            android:id="@+id/edtNXB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập NXB" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvCC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nhà cung cấp:"
+            android:textSize="19sp" />
+
+        <Spinner
+            android:id="@+id/spCC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/btnThem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50dp"
+            android:text="Thêm" />
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trở về" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnThoat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thoát" />
+</LinearLayout>
